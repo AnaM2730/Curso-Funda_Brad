@@ -5,6 +5,7 @@
 
 :root{
     --Purple: #b038e8;
+    --Green: #4ce838;
     --White: #ffffff;
     --Black: #000000;
 }
@@ -14,14 +15,20 @@ body{
     font-family: monospace;
 }
 
+
 .light_theme{
-    --bg: var(--Purple);
-    --fontColor:var(--White);
+    --bg: var(--Green);
+    --fontColor:var(--Black);
+    --btnBg: var(--Black);
+    --btnFontColor: var(--White);
 }
+
 
 .dark-theme{
     --bg: var(--Black);
-    --fontColor:var(--White);
+    --fontColor:var(--Green);
+    --btnBg: var(--White);
+    --btnFontColor:var(--Black);
 }
 
 ul{
@@ -34,4 +41,26 @@ li{
 
 .list{
     list-style: square;
+}
+
+/* Botão */
+.btn{
+    color: var(--btnFontColor);
+    background: var(--btnBg);
+}
+
+.btn{
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+
+.btn:focus{
+    outline-style: none;
 }
